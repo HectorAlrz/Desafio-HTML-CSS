@@ -1,2 +1,8 @@
-# Desafio-HTML-CSS
-Equipo 4
+
+# Desafio-Kodemia
+# Equipo 4
+# Gerardo Jiménez
+# Héctor Alcaraz
+# Bulmaro Arellano
+# Miguel Angel Marquez
+
