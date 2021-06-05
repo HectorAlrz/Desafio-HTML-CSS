@@ -1,10 +1,12 @@
 /* ------Variables------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 /* Colores primarios*/
 /* Colores secundarios*/
 /* Neutral*/
 /*Fuente*/
 .font- {
   font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 /* ------variables------ */
@@ -12,8 +14,8 @@
 /* --header-- */
 /* Hero */
 /*---hero--*/
-/* Body */
-/* --body-- */
+/* Main */
+/* --main-- */
 /* Footer */
 footer {
   background: #232127;

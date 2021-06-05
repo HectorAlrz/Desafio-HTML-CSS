@@ -1,38 +1,40 @@
 /* ------Variables------ */
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* Colores primarios*/
-$Cyan:                  hsl(180, 66%, 49%);
-$Dark-violet:           hsl(257, 27%, 26%);
+$cyan:                  hsl(180, 66%, 49%);
+$dark-violet:           hsl(257, 27%, 26%);
 
 /* Colores secundarios*/
-$Red:                   hsl(0, 87%, 67%);
+$red:                   hsl(0, 87%, 67%);
 
 /* Neutral*/
-$Gray:                  hsl(0, 0%, 75%);
-$Grayish-violet:        hsl(257, 7%, 63%);
-$Very-dark-blue:        hsl(255, 11%, 22%);
-$Very-dark-Violet:      hsl(260, 8%, 14%);
+$gray:                  hsl(0, 0%, 75%);
+$grayish-violet:        hsl(257, 7%, 63%);
+$very-dark-blue:        hsl(255, 11%, 22%);
+$very-dark-violet:      hsl(260, 8%, 14%);
 
 /*Fuente*/
 .font-{
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
 }
 /* ------variables------ */
 
 
 /* Header */
+    
 /* --header-- */
 
 /* Hero */
 
 /*---hero--*/
 
-/* Body */
-/* --body-- */
+/* Main */
+/* --main-- */
 
 /* Footer */
 footer{
-background: $Very-dark-Violet;
+background: $very-dark-violet;
 }
 /* --Footer-- */
 
