@@ -9,6 +9,14 @@
   font-size: 18px;
 }
 
+/* Body*/
+body {
+  font-size: 18px;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* -----body-----*/
 /* ------variables------ */
 /* Header */
 .container-head {
@@ -19,7 +27,6 @@
       -ms-flex-align: center;
           align-items: center;
   padding-left: 1rem;
-  border: solid 2px black;
 }
 
 .container-head .navigation-bar {
@@ -34,18 +41,22 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   list-style-type: none;
-  border: solid 2px red;
 }
 
-.container-head .navigation-bar ul li {
+.container-head .navigation-bar ul.lista-navbar li {
+  margin: .2rem;
   display: inline;
+}
+
+.container-head .navigation-bar div.login-container button {
+  margin: .2rem;
 }
 
 /* --header-- */
 /* Main */
 /* --main-- */
 /* Footer */
-footer {
+.footer-bottom {
   background: #232127;
 }
 
