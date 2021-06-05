@@ -22,14 +22,28 @@ $very-dark-violet:      hsl(260, 8%, 14%);
 
 
 /* Header */
-    
+
+.container-head{
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    border: solid 2px black;
+    .navigation-bar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style-type: none;
+        border: solid 2px red;
+        ul li{
+            display:inline;
+        }
+    }
+}
 /* --header-- */
 
-/* Hero */
-
-/*---hero--*/
-
 /* Main */
+
 /* --main-- */
 
 /* Footer */
