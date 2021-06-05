@@ -4,13 +4,12 @@
 /* Colores secundarios*/
 /* Neutral*/
 /*Fuente*/
-.font- {
+.font-poppins {
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
 }
 
 /* Body*/
-body {
+header, body, main {
   font-size: 18px;
   padding-right: 10%;
   padding-left: 10%;
@@ -26,10 +25,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 1rem;
 }
 
-.container-head .navigation-bar {
+.navigation-bar {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,12 +41,22 @@ body {
   list-style-type: none;
 }
 
-.container-head .navigation-bar ul.lista-navbar li {
+.navigation-bar ul.lista-navbar li {
   margin: .2rem;
   display: inline;
 }
 
-.container-head .navigation-bar div.login-container button {
+.navigation-bar ul.lista-navbar li a {
+  color: #bfbfbf;
+  text-decoration: none;
+}
+
+.navigation-bar ul.lista-navbar li a:hover {
+  color: black;
+}
+
+.navigation-bar ul.burger button {
+  display: inline;
   margin: .2rem;
 }
 
@@ -57,10 +65,19 @@ body {
 /* --main-- */
 /* Footer */
 .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background: #232127;
 }
 
 /* --Footer-- */
 /* Responsividad */
+@media only screen and (max-width: 1000px) {
+  div.container-head nav {
+    display: none;
+  }
+}
+
 /* --responsividad-- */
 /*# sourceMappingURL=style.css.map */
