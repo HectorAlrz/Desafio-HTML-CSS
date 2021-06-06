@@ -9,7 +9,9 @@
 }
 
 /* Body*/
-header, body, main {
+header,
+body,
+main {
   font-size: 18px;
   padding-right: 10%;
   padding-left: 10%;
@@ -62,6 +64,23 @@ header, body, main {
 
 /* --header-- */
 /* Main */
+.shortern-input {
+  height: auto;
+  width: auto;
+  border: black 2px solid;
+  background: #232127;
+  background-image: url("../images/bg-boost-mobile.svg");
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+  margin: 2rem 2rem;
+}
+
 /* --main-- */
 /* Footer */
 .footer-bottom {
@@ -77,7 +96,20 @@ header, body, main {
   div.container-head nav {
     display: none;
   }
+  .hero-container {
+    text-align: center;
+  }
+  main .hero-img-container {
+    overflow: hidden;
+  }
 }
 
 /* --responsividad-- */
+span.span-input {
+  margin: 0 10px;
+}
+
+span.span-button {
+  margin: 0 10px;
+}
 /*# sourceMappingURL=style.css.map */
