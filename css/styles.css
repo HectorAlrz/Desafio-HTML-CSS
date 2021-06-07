@@ -8,6 +8,10 @@ a {
   color: #000;
 }
 
+#desktop-header {
+  display: none;
+}
+
 /* header */
 .header {
   background-color: #fff;
