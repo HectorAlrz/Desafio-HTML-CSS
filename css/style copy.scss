@@ -1,0 +1,304 @@
+
+body,
+main {
+    font-family: $poppins;
+    font-size: 18px;
+
+}
+
+
+/* -----body-----*/
+
+
+/* ------variables------ */
+
+/* Header */
+
+.container-head {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    ul.lista-navbar li {
+        margin: .2rem;
+        display: inline;
+    }
+    ul.lista-navbar li a {
+        color: $gray;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+    ul.burger button {
+        display: inline;
+        margin: .2rem;
+    }
+}
+
+
+/* --header-- */
+
+
+/* Main */
+
+.hero-img-container{
+    border: 2px solid black;
+}
+.shortern{
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    .shortern-input {
+        border-radius: .5rem;
+        background: $very-dark-violet;
+        background-image: url("../images/bg-shorten-desktop.svg");
+        padding: 2rem;
+        .shortern-items{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            input{
+                height: 1.5rem;
+                width: 80%;
+                border-radius: .5rem;
+            }
+        }
+    }
+}
+.shortern-button{
+    width: 15%;
+    background: $cyan;
+    border-radius: 5px;
+    border: transparent;
+    &:hover{
+        background: green;
+    }
+}
+/* Divs */
+.info-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: $grayish-violet;
+    div.cyan-line{
+        position:absolute;
+        top: 50%;
+        display: block;
+        background: $cyan;
+        border: 2px solid black;
+        height: 10px;
+        width: 400px;
+    }
+    div.text-info-container{
+        text-align: center;
+    }
+    section.info-container-2{
+        margin-top: -40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: left;
+        width: 1000px;
+        .img-info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+            margin-top: -30px;
+            margin-left: 4%;
+            border-radius: 50%;
+            background: $dark-violet;
+            width: 66px;
+            height: 66px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            .img-info img{
+                text-align: center;
+            }
+        }
+        div.info-1{
+            margin-top: 1%;
+            border: 2px solid black;
+            border-radius:1rem;
+            background: hsl(0, 0%, 100%);
+            height: 200px;
+            width: 300px;
+            padding-left: 1rem;
+            p.parrafo{
+                color: $gray;
+            }
+        }
+        div.info-2{
+            margin-top: 3%;
+            border: 2px solid black;
+            border-radius:1rem;
+            background: hsl(0, 0%, 100%);
+            height: 200px;
+            width: 300px;
+            padding-left: 1rem;
+            p.parrafo{
+                color: $gray;
+            }
+        }
+        div.info-3{
+            margin-top: 5%;
+            margin-bottom: 5%;
+            border: 2px solid black;
+            border-radius:1rem;
+            background: hsl(0, 0%, 100%);
+            height: 200px;
+            width: 300px;
+            padding-left: 1rem;
+            p.parrafo{
+                color: $gray;
+            }
+        }
+    }
+}
+/* Divs*/
+/* --main-- */
+
+/* Footer */
+footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $very-dark-violet;
+    div img{
+        text-align: center;
+        height: 30px;
+        width: 100;
+    }
+
+        div.middle-footer-container{
+            color: white;
+            background: red;
+            display: flex;
+        }
+        ul li{
+            padding: .5rem;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        div.iconos-container{
+            display: flex;
+            padding-top: 2rem;
+            background: gold;
+            img{
+                margin: 1rem;
+                height: 30px;
+                width: 30px;
+            }
+        }
+    }
+        
+    
+    /* --Footer-- */
+
+
+/* Responsividad */
+
+@media only screen and ( max-width: 1000px) {
+    main{
+        position: relative;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    div.container-head nav {
+        display: none;
+    }
+    .hero-container {
+        text-align: center;
+    }
+    main .hero-img-container {
+        overflow: hidden;
+    }
+.shortern{
+    height: 300px;
+    width: 400px;
+    padding:0;
+    margin: 10%;
+}
+    .shortern-input {
+        margin: 0;
+        background-image: url("../images/bg-shorten-mobile.svg");
+    }
+    .shortern-items{
+        height: 2%;
+        justify-content: none;
+        flex-direction: column;
+        align-items: center;
+        input{
+            width: 60%;
+            height: 30px;
+        }
+        .shortern-button{
+            margin-top: 2%;
+            width: 81%;
+            height: 30px;
+        }
+    }
+
+.cyan-line{
+    display: block;
+    background: $cyan;
+    height: 100px;
+    width: 50px;
+}
+.info-container{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    div.cyan-line{
+        border: 2px solid black;
+        height: 5px;
+    }
+
+    div.text-info-container{
+        text-align: center;
+    }
+    section.info-container-2{
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin: 2rem;
+        .img-info{
+            margin-left: 46%;
+        }
+        div.info-1{
+            margin-top: 0;
+            height: 200px;
+            width: auto;
+        }
+        div.info-2{
+            margin-top: 2rem;
+            width: auto;
+        }
+        div.info-3{
+            margin-top: 3rem;
+            margin-bottom: 0;
+            height: 200px;
+            width: auto;
+        }
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+}
+/* --responsividad-- */
+
+/* MOBILE */

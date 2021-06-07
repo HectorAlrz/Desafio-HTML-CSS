@@ -14,8 +14,8 @@
 <body>
 
 <!-- Bulmaro -->
+<!-- Header -->
 <header>
-    <div class= "container-head">
         <a href="#"><img src="images/logo.svg" alt="" class="logo"></a>
         <nav class="navigation-bar">
             <ul class="lista-navbar">
@@ -24,16 +24,22 @@
                 <li><a href="#">Resources</a></li>
             </ul>
             <div class="login-container">
-                <button class="login burger">Login</button>
-                <button class="sign-up burger">Sign Up</button>
+                <button class="login">Login</button>
+                <button class="sign-up">Sign Up</button>
             </div>
-        </nav>    
-    </div>
-
+        </nav>
+        <div id="toggle-button">
+            <input type="checkbox" name="toggle" id="toggle-input" />
+            <span id="toggle-lines">
+                <span>-</span>
+                <span>-</span>
+                <span>-</span>
+            </span>
+        </div>
+        <!-- -->
 </header>
 
 <main>
-    <!-- Mike -->
     <section class="hero">
         <div  class="hero-img-container">
             <img src="images/illustration-working.svg" alt="" class="logo">
@@ -46,28 +52,26 @@
     </section>
 
 <!-- Hector -->
-    <section class="shortern">
-        <div class="shortern-input">
-            <div class= "shortern-items">
-                <input type="text" placholder="Lorem ipsun">
-                <button class="shortern-button">Shortenit</button>
-            </div>
+    <section class="search-container">
+        <div class="search-input">
+            <input type="text" placholder="Lorem ipsun">
+            <button class="shortern-button">Shortenit</button>
         </div>
     </section>
 <!--hector -->
     <section class="info-container">
         <div class="text-info-container">
-            <h2>Advanced Statistics</h2>
+            <h1>Advanced Statistics</h1>
             <p>Lorem ipsum, dolor sit amet</p>
         </div>
 
+        <div class="cyan-line"></div>
         <section class="info-container-2">
-            <div class="cyan-line"></div>
             <div class="info-1">
                 <div class="img-info">
                     <img src="images/icon-brand-recognition.svg" alt="">
                 </div>
-                <h2 >Brand Recognition</h2>
+                <h3 >Brand Recognition</h2>
                 <p class="parrafo"> lorem ipsun turm pam pin</p>
             </div>
 
@@ -75,7 +79,7 @@
                 <div class="img-info">
                     <img src="images/icon-detailed-records.svg" alt="">
                 </div>
-                <h2>Detail Records</h2>
+                <h3>Detail Records</h2>
                 <p class="parrafo">Lorem chorizum</p>
             </div>         
 
@@ -83,39 +87,50 @@
                 <div class="img-info">
                     <img src="images/icon-fully-customizable.svg" alt="">
                 </div>
-                <h2>Fully customizable</h2>
+                <h3>Fully customizable</h2>
                 <p class="parrafo">Lorem Chorizum</p>
             </div>
         </section>
     </section>
+    <section class="button-call-to-action">
+        <div>
+            <h2>Boost your links today</h2>
+            <button>Get started</button>
+        </div>
+    </section>
     </main>
 <!--hector -->
 
-<div class="button-call-to-action">
-    <h2>Boost your links today</h2>
-    <button>Get started</button>
-</div>
 <!--gerry -->
 <footer class="footer-container">
+        <div>
+            <img src="images/logo.svg">
+        </div>
         <div class="middle-footer-container">
-            <ul>
-                <h3>Features</h3>
-                <li>Lorem</li>
-                <li>Chorizum</li>
-                <li>Salchichum</li>
-            </ul>
-            <ul>
-                <h3>Resources</h3>
-                <li>Lorem</li>
-                <li>Chorizum</li>
-                <li>Salchichum</li>
-            </ul>
-            <ul>
-                <h3>Company</h3>
-                <li>Lorem</li>
-                <li>Chorizum</li>
-                <li>Salchichum</li>
-            </ul>
+            <nav>
+                <h4>Features</h4>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Chorizum</li>
+                    <li>Salchichum</li>
+                </ul>
+            </nav>
+            <nav>
+                <h4>Resources</h4>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Chorizum</li>
+                    <li>Salchichum</li>
+                </ul>
+            </nav>
+            <nav>
+                <h4>Company</h4>
+                <ul>
+                    <li>Lorem</li>
+                    <li>Chorizum</li>
+                    <li>Salchichum</li>
+                </ul>
+            </nav>
         </div>
         <div class="iconos-container">
             <img src="images/icon-facebook.svg" alt="">
@@ -126,3 +141,4 @@
 </footer>
 </body>
 </html>
+Lagrimas de coder para tomar café sniff sniff
