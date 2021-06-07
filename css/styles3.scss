@@ -1,7 +1,42 @@
+/*primary colors*/
+
+$mobile-margins:15px;
+$primary-cyan: hsl(180, 66%, 49%);
+$primary-dark-violet: hsl(257, 27%, 26%);
+
+/*Secondary colors*/
+
+$secondary-red: hsl(0, 87%, 67%);
+
+/*Neutral color*/
+
+$neutral-gray: hsl(0, 0%, 75%);
+$neutral-grayish-violet: hsl(257, 7%, 63%);
+$neutral-very-dark-blue: hsl(255, 11%, 22%);
+$neutral-very-dark-violet: hsl(260, 8%, 14%);
+
+/*Fonts*/
+
+$font-poppins:'Poppins',
+sans-serif;
+
+/*Margins reset*/
+
+*,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 /* header */
 
-* {
-    box-sizing: border-box;
+body {
+    font-family: $font-poppins;
+    min-width: 345px;
+    margin-right: $mobile-margins;
+    margin-left: $mobile-margins;
 }
 
 .header {
@@ -18,12 +53,16 @@
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: hsl(255, 11%, 22%);
+    background-color: #3A3053;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     font-weight: 700;
-    font-size: 18px;
+}
+
+.header li.separator {
+    border-bottom: solid;
+    border-color: $neutral-grayish-violet;
 }
 
 .header li a {
@@ -41,16 +80,12 @@
     border-radius: 20px;
     height: auto;
     color: #FFFFFF;
-    font-family: Open Sans;
-    width: 100%;
-    text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    text-align: center;
 }
 
 .login-button a:hover {
-    background-color: hsl(255, 11%, 22%);
+    background-color: #2BD1D1;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
@@ -81,10 +116,10 @@
 .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    float: right;
 }
 
 .header .menu-icon .navicon {
@@ -148,34 +183,16 @@
 
 @media only screen and (max-width: 768px) {
     .header ul {
-        background-color: hsl(255, 11%, 22%);
+        background-color: #35323e;
     }
     .header li a {
         padding: 15px;
     }
 }
 
-@media only screen and (min-width: 768px) {
-    .menu-wrapper {
-        height: 55px;
-        line-height: 55px;
-        width: 100%;
-    }
-    .header li {
-        float: left;
-    }
-    .header .logo {
-        line-height: 1;
-    }
-    .header li a {
-        color: #fff;
-        padding: 0px 30px;
-        border-right: 1px solid rgba(255, 255, 255, 0.2);
-    }
-    .header .menu {
-        clear: none;
-        float: right;
-        max-height: none;
+@media only screen and (min-width: 1000px) {
+    #mobile-header {
+        display: none;
     }
     .header .menu-icon {
         display: none;
