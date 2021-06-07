@@ -173,8 +173,7 @@ body {
 @media only screen and (min-width: 1001px) {
   body {
     max-width: 1440px;
-    padding-left: 3%;
-    padding-right: 3%;
+    margin: auto;
     padding-top: 3%;
   }
 
