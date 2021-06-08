@@ -190,8 +190,8 @@ main {
         z-index: -1;
         div.cyan-line {
             background: $cyan;
-            //position: absolute;
-            margin-top: 12%;
+            position: absolute;
+            //margin-top: 12%;
             height: 500px;
             width: 10px;
             z-index: -2;
@@ -217,6 +217,7 @@ main {
             background: hsl(0, 0%, 100%);
             margin: 5vh 2rem;
             padding: 3%;
+            position: relative;
                 p.parrafo {
                     color: $gray;
                 }
@@ -226,16 +227,18 @@ main {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                position: absolute;
+                position: absolute !important;
                 // margin-top: -20%;
-                top: calc(0 - 33px );
-                border-radius: 50%;
+                top: -33px !important;
                 background: $dark-violet;
                 width: 66px;
                 height: 66px;
-                -moz-border-radius: 50%;
+                border-radius: 50%;
                 -webkit-border-radius: 50%;
-            }
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+}
             
             /**/
         }
@@ -395,7 +398,7 @@ footer {
                 }
 
                 div.info-1 {
-                    align-self: flex-end;
+                    align-self: flex-start;
                 }
 
                 div.info-2 {
@@ -403,7 +406,7 @@ footer {
                 }
 
                 div.info-3 {
-                    align-self: flex-start;
+                    align-self: flex-end;
                 }
             }
         }

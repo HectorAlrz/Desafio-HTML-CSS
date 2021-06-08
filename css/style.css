@@ -214,7 +214,7 @@ main section.info-container {
 
 main section.info-container div.cyan-line {
   background: #2acfcf;
-  margin-top: 12%;
+  position: absolute;
   height: 500px;
   width: 10px;
   z-index: -2;
@@ -258,6 +258,7 @@ main section.info-container-2 div.info-1, main section.info-container-2 div.info
   background: white;
   margin: 5vh 2rem;
   padding: 3%;
+  position: relative;
   /**/
 }
 
@@ -279,14 +280,16 @@ main section.info-container-2 div.info-1 .img-info, main section.info-container-
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
-  top: calc(0 - 33px);
-  border-radius: 50%;
+  position: absolute !important;
+  top: -33px !important;
   background: #3b3054;
   width: 66px;
   height: 66px;
-  -moz-border-radius: 50%;
+  border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 section.button-call-to-action {
@@ -497,8 +500,8 @@ footer div.middle-footer-container nav ul li {
     -webkit-border-radius: 50%;
   }
   main section.info-container section.info-container-2 div.info-1 {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
   main section.info-container section.info-container-2 div.info-2 {
     -ms-flex-item-align: center;
@@ -506,8 +509,8 @@ footer div.middle-footer-container nav ul li {
         align-self: center;
   }
   main section.info-container section.info-container-2 div.info-3 {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
   footer {
     -webkit-box-pack: center;
