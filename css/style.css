@@ -95,7 +95,7 @@ header #toggle-button #toggle-input {
   width: 3em;
   height: 3em;
   z-index: 10;
-  opacity: .3;
+  opacity: 0.01;
 }
 
 header #toggle-button #toggle-lines {

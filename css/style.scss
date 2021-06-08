@@ -4,38 +4,24 @@
 
 /* Colores primarios*/
 
-$cyan: hsl(180,
-66%,
-49%);
-$dark-violet: hsl(257,
-27%,
-26%);
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
 
-/* Colores secundarios*/
+/*-- Colores secundarios --*/
 
-$red: hsl(0,
-87%,
-67%);
+$red: hsl(0, 87%, 67%);
 
-/* Neutral*/
+/*-- Colores neutrales --*/
 
-$gray: hsl(0,
-0%,
-75%);
-$grayish-violet: hsl(257,
-7%,
-63%);
-$very-dark-blue: hsl(255,
-11%,
-22%);
-$very-dark-violet: hsl(260,
-8%,
-14%);
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
 
-/*Fuente*/
+/*-- Fuente --*/
 
-$poppins:'Poppins',
-sans-serif;
+$poppins:'Poppins', sans-serif;
+
 
 /*--------------------> General <--------------------*/
 
@@ -106,7 +92,7 @@ header {
             width: 3em;
             height: 3em;
             z-index: 10;
-            opacity: .3;
+            opacity: 0.01;
         }
         #toggle-lines {
             display: block;
@@ -137,7 +123,7 @@ header {
 }
 
 
-/*--------------------> main<--------------------*/
+/*--------------------> main <--------------------*/
 
 main {
     section.hero {
@@ -239,9 +225,7 @@ main {
                 -moz-border-radius: 50%;
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
-}
-            
-            /**/
+            }
         }
     }
 }
@@ -270,7 +254,7 @@ section.button-call-to-action {
 }
 
 
-/*--------------------> main<--------------------*/
+/*--------------------> Footer <--------------------*/
 
 footer {
     color: hsl(0, 0%, 100%);
@@ -298,6 +282,8 @@ footer {
 /*  R E S P O N S I V I D A D*/
 
 @media only screen and (min-width: 800px) {
+    /*--------------------> Header --------------------*/
+
     header {
         nav.navigation-bar {
             display: flex;
@@ -308,6 +294,8 @@ footer {
             display: none;
         }
     }
+/*--------------------> Main <--------------------*/
+
     main {
         section.hero {
             justify-content: space-between;
@@ -412,6 +400,8 @@ footer {
             }
         }
     }
+/*--------------------> Footer <--------------------*/
+
     footer{
     justify-content: center;
     flex-direction: row;
