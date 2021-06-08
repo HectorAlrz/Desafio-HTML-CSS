@@ -184,8 +184,9 @@ main section.search-container div.search-input {
   width: 80vw;
   padding: 1rem;
   border-radius: .5rem;
-  background: #232127;
+  background-color: #232127;
   background-image: url("/images/bg-shorten-desktop.svg");
+  background-size: cover;
 }
 
 main section.search-container div.search-input input {
@@ -242,7 +243,7 @@ main section.info-container-2 {
   padding: 2vh;
 }
 
-main section.info-container-2 div {
+main section.info-container-2 div.info-1, main section.info-container-2 div.info-2, main section.info-container-2 div.info-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,7 +262,11 @@ main section.info-container-2 div {
   /**/
 }
 
-main section.info-container-2 div .img-info {
+main section.info-container-2 div.info-1 p.parrafo, main section.info-container-2 div.info-2 p.parrafo, main section.info-container-2 div.info-3 p.parrafo {
+  color: #bfbfbf;
+}
+
+main section.info-container-2 div.info-1 .img-info, main section.info-container-2 div.info-2 .img-info, main section.info-container-2 div.info-3 .img-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -276,7 +281,7 @@ main section.info-container-2 div .img-info {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
-  margin-top: -20%;
+  top: calc(0 - 33px);
   border-radius: 50%;
   background: #3b3054;
   width: 66px;
@@ -285,33 +290,8 @@ main section.info-container-2 div .img-info {
   -webkit-border-radius: 50%;
 }
 
-main section.info-container-2 div .img-info .img-info img {
+main section.info-container-2 div.info-1 .img-info .img-info img, main section.info-container-2 div.info-2 .img-info .img-info img, main section.info-container-2 div.info-3 .img-info .img-info img {
   text-align: center;
-}
-
-main section.info-container-2 div div.info-1 {
-  border-radius: 1rem;
-  background: white;
-}
-
-main section.info-container-2 div div.info-1 p.parrafo {
-  color: #bfbfbf;
-}
-
-main section.info-container-2 div div.info-2 {
-  padding-left: 1rem;
-}
-
-main section.info-container-2 div div.info-2 p.parrafo {
-  color: #bfbfbf;
-}
-
-main section.info-container-2 div div.info-3 {
-  padding-left: 1rem;
-}
-
-main section.info-container-2 div div.info-3 p.parrafo {
-  color: #bfbfbf;
 }
 
 section.button-call-to-action {
@@ -325,8 +305,10 @@ section.button-call-to-action {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  color: white;
+  background-color: #3b3054;
   background-image: url("/images/bg-boost-desktop.svg");
-  background: purple;
+  background-size: cover;
 }
 
 section.button-call-to-action div h2 {
@@ -471,7 +453,7 @@ footer div.middle-footer-container nav ul li {
             align-items: center;
     padding: 2vh;
   }
-  main section.info-container section.info-container-2 div {
+  main section.info-container section.info-container-2 div.info-1, main section.info-container section.info-container-2 div.info-2, main section.info-container section.info-container-2 div.info-3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -492,8 +474,10 @@ footer div.middle-footer-container nav ul li {
     padding: 3%;
     height: 200px;
     width: 300px;
+    display: block;
+    margin-top: 10%;
   }
-  main section.info-container section.info-container-2 div div.img-info {
+  main section.info-container section.info-container-2 div.info-1 div.img-info, main section.info-container section.info-container-2 div.info-2 div.img-info, main section.info-container section.info-container-2 div.info-3 div.img-info {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -507,22 +491,19 @@ footer div.middle-footer-container nav ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absoluta;
-    margin-top: -20%;
+    position: absolute;
+    top: calc(0 - 33px);
+    left: calc(0 + 33px);
     margin-left: -8%;
     border-radius: 50%;
     background: #3b3054;
-    width: 2px;
-    height: 3px;
+    width: 66px;
+    height: 66px;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
   }
-  main section.info-container section.info-container-2 div div.img-info .img-info img {
+  main section.info-container section.info-container-2 div.info-1 div.img-info .img-info img, main section.info-container section.info-container-2 div.info-2 div.img-info .img-info img, main section.info-container section.info-container-2 div.info-3 div.img-info .img-info img {
     text-align: center;
-  }
-  main section.info-container section.info-container-2 div div-info-2 {
-    display: block;
-    margin-top: 10%;
   }
   footer {
     -webkit-box-pack: center;
